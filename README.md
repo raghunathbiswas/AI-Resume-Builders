@@ -59,4 +59,4 @@ project/
 This project is **open‑source** and free to use. Feel free to modify or extend it.
 
 ---
-*Built with ❤️ by Antigravity*
+*Built with ❤️ by RaghuPlaysCode*
