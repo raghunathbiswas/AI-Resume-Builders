@@ -41,7 +41,7 @@ project/
 1. **Clone / copy** the project folder to your machine.
 2. Open a terminal (PowerShell) and navigate to the project directory:
    ```powershell
-   cd "C:\Users\hp\OneDrive\Desktop\project"
+   cd "C:\Users\hp\Downloads\AI-Resume-Builders"
    ```
 3. **Optional**: start a simple HTTP server (requires Python). This allows you to view the app at `http://localhost:8000`:
    ```powershell
