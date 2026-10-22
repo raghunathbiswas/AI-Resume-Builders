@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResumeCraft AI</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="header">
+        <h1>ResumeCraft AI</h1>
+        <p>Build professional resumes instantly – no AI keys required.</p>
+    </header>
+    <main class="container">
+        <section class="form-section">
+            <h2>Resume Builder</h2>
+            <form id="resume-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" />
+                </div>
+                <div class="form-group">
+                    <label for="summary">Professional Summary</label>
+                    <textarea id="summary" name="summary" rows="3"></textarea>
+                </div>
+                <hr />
+                <h3>Education</h3>
+                <div id="education-list"></div>
+                <button type="button" class="add-btn" data-section="education">Add Education</button>
+                <hr />
+                <h3>Technical Skills</h3>
+                <textarea id="skills" name="skills" rows="2" placeholder="Comma separated list"></textarea>
+                <hr />
+                <h3>Work Experience</h3>
+                <div id="experience-list"></div>
+                <button type="button" class="add-btn" data-section="experience">Add Experience</button>
+                <hr />
+                <h3>Projects</h3>
+                <div id="projects-list"></div>
+                <button type="button" class="add-btn" data-section="projects">Add Project</button>
+                <hr />
+                <h3>Certifications</h3>
+                <div id="certifications-list"></div>
+                <button type="button" class="add-btn" data-section="certifications">Add Certification</button>
+                <hr />
+                <div class="form-actions">
+                    <button type="button" id="sample-data-btn">Load Sample Data</button>
+                    <button type="submit">Save & Preview</button>
+                </div>
+            </form>
+        </section>
+        <section class="preview-section">
+            <div class="preview-header">
+                <h2>Live Preview</h2>
+                <div class="template-switcher">
+                    <label>Template:</label>
+                    <select id="template-select">
+                        <option value="template1">Classic</option>
+                        <option value="template2">Modern</option>
+                        <option value="template3">Creative</option>
+                    </select>
+                </div>
+                <button id="download-btn">Download PDF</button>
+            </div>
+            <div id="resume-preview" class="resume-template template1"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 ResumeCraft AI</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
